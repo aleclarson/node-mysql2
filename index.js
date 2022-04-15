@@ -43,10 +43,7 @@ exports.createServer = function(handler) {
 };
 
 exports.PoolConnection = require('./lib/pool_connection');
-exports.escape = SqlString.escape;
-exports.escapeId = SqlString.escapeId;
-exports.format = SqlString.format;
-exports.raw = SqlString.raw;
+Object.assign(exports, SqlString);
 
 exports.__defineGetter__(
   'createConnectionPromise',

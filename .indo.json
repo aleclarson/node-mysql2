@@ -1,0 +1,4 @@
+{
+  "alias": { "sqlstring": "@alloc/sqlstring" },
+  "ignore": ["examples"]
+}
