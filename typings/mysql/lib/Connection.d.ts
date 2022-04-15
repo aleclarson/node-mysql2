@@ -88,6 +88,11 @@ declare namespace Connection {
         stringifyObjects?: boolean;
 
         /**
+         * Call the `toJSON` method of any object value.
+         */
+        toJSON?: boolean;
+
+        /**
          * Allow connecting to MySQL instances that ask for the old (insecure) authentication method. (Default: false)
          */
         insecureAuth?: boolean;
